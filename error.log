@@ -1,0 +1,82 @@
+Traceback (most recent call last):
+  File "/home/noturno/Development/Github/bottle-crud/project/controllers/controller.py", line 27, in <module>
+    index()
+  File "/home/noturno/Development/Github/bottle-crud/project/controllers/controller.py", line 18, in index
+    conn = sqlite3.connect('../model/checklist.db')
+OperationalError: unable to open database file
+Traceback (most recent call last):
+  File "/home/noturno/Development/Github/bottle-crud/project/controllers/controller.py", line 27, in <module>
+    index()
+  File "/home/noturno/Development/Github/bottle-crud/project/controllers/controller.py", line 18, in index
+    conn = sqlite3.connect('../model/checklist.db')
+OperationalError: unable to open database file
+Traceback (most recent call last):
+  File "/home/noturno/Development/Github/bottle-crud/project/controllers/controller.py", line 27, in <module>
+    index()
+  File "/home/noturno/Development/Github/bottle-crud/project/controllers/controller.py", line 18, in index
+    conn = sqlite3.connect('model/checklist.db')
+OperationalError: unable to open database file
+Traceback (most recent call last):
+  File "/home/noturno/Development/Github/bottle-crud/project/controllers/controller.py", line 27, in <module>
+    index()
+  File "/home/noturno/Development/Github/bottle-crud/project/controllers/controller.py", line 18, in index
+    conn = sqlite3.connect('/model/checklist.db')
+OperationalError: unable to open database file
+Traceback (most recent call last):
+  File "/home/noturno/Development/Github/bottle-crud/project/controllers/controller.py", line 27, in <module>
+    index()
+  File "/home/noturno/Development/Github/bottle-crud/project/controllers/controller.py", line 18, in index
+    conn = sqlite3.connect('../model/checklist.db')
+OperationalError: unable to open database file
+Traceback (most recent call last):
+  File "/home/noturno/Development/Github/bottle-crud/project/controllers/controller.py", line 27, in <module>
+    index()
+  File "/home/noturno/Development/Github/bottle-crud/project/controllers/controller.py", line 20, in index
+    cl.execute("SELECT id, task, description, status FROM checklist")
+OperationalError: no such table: checklist
+Traceback (most recent call last):
+  File "/home/noturno/Development/Github/bottle-crud/project/controllers/controller.py", line 27, in <module>
+    index()
+  File "/home/noturno/Development/Github/bottle-crud/project/controllers/controller.py", line 20, in index
+    cl.execute("SELECT id, task, description, status FROM checklist")
+OperationalError: no such table: checklist
+Traceback (most recent call last):
+  File "/home/noturno/Development/Github/bottle-crud/project/controllers/controller.py", line 27, in <module>
+    index()
+  File "/home/noturno/Development/Github/bottle-crud/project/controllers/controller.py", line 18, in index
+    conn = sqlite3.connect('./model/checklist.db')
+OperationalError: unable to open database file
+Traceback (most recent call last):
+  File "/home/noturno/Development/Github/bottle-crud/project/controllers/controller.py", line 27, in <module>
+    index()
+  File "/home/noturno/Development/Github/bottle-crud/project/controllers/controller.py", line 20, in index
+    cl.execute("SELECT id, task, description, status FROM checklist")
+OperationalError: no such table: checklist
+Traceback (most recent call last):
+  File "/home/noturno/Development/Github/bottle-crud/project/controllers/controller.py", line 27, in <module>
+    index()
+  File "/home/noturno/Development/Github/bottle-crud/project/controllers/controller.py", line 20, in index
+    cl.execute("SELECT id, task, description, status FROM checklist")
+OperationalError: no such table: checklist
+Traceback (most recent call last):
+  File "/home/noturno/Development/Github/bottle-crud/project/controllers/controller.py", line 27, in <module>
+    index()
+  File "/home/noturno/Development/Github/bottle-crud/project/controllers/controller.py", line 20, in index
+    cl.execute("SELECT id, task, description, status FROM checklist")
+OperationalError: no such table: checklist
+Traceback (most recent call last):
+  File "/home/noturno/Development/Github/bottle-crud/project/controllers/controller.py", line 84, in update
+    conn = sqlite3.connect('../model/checklist.db')
+OperationalError: unable to open database file
+Traceback (most recent call last):
+  File "/home/noturno/Development/Github/bottle-crud/project/controllers/controller.py", line 84, in update
+    conn = sqlite3.connect('../model/checklist.db')
+OperationalError: unable to open database file
+Traceback (most recent call last):
+  File "/home/noturno/Development/Github/bottle-crud/project/controllers/controller.py", line 84, in update
+    conn = sqlite3.connect('../model/checklist.db')
+OperationalError: unable to open database file
+Traceback (most recent call last):
+  File "/home/noturno/Development/Github/bottle-crud/project/controllers/controller.py", line 84, in update
+    conn = sqlite3.connect('../model/checklist.db')
+OperationalError: unable to open database file
