@@ -1,10 +1,17 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 #
-#  Author: Edson Silva
-#  URL: https://edsonlead.com
-#  E-mail: edsonlead@gmail.com
+# model.py - layer model of MVC pattern
 #
+# author = {'name': 'Edson Silva', 'email': 'edsonlead@gmail.com'}
+# 
+# ----------------------------------------------------------------------------
 #
+# This layer model contain the database structure
+#
+# Example:
+#   $ python model.py
+#
+
 
 import traceback
 import sqlite3

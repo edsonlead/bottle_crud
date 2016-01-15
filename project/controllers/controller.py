@@ -1,10 +1,15 @@
 #!/usr/bin/python
 #
-#  __author__ = Edson Silva
-#  __url__ = https://edsonlead.com
-#  __e-mail__ = edsonlead@gmail.com
+# controller.py - layer control of MVC pattern
+#
+# author = {'name': 'Edson Silva', 'email': 'edsonlead@gmail.com'}
+# 
+# ----------------------------------------------------------------------------
+#
+# This layer control contains the CRUD - create, read, update and delete
 #
 #
+
 
 import traceback
 import sqlite3
@@ -44,7 +49,7 @@ def new():
             else:
                 status = "No"
 
-            conn = sqlite3.connect('../model/checklist.db')
+            conn = sqlite3.connect('../models/checklist.db')
             cl = conn.cursor()
             cl.execute("INSERT INTO checklist (task,description,status)\
                         VALUES (?,?,?)", (task, description, status))
@@ -74,7 +79,7 @@ def update(no):
             else:
                 status = "No"
 
-            conn = sqlite3.connect('../model/checklist.db')
+            conn = sqlite3.connect('../models/checklist.db')
             cl = conn.cursor()
             cl.execute("UPDATE checklist SET task = ? , description = ? ,\
                     status = ? WHERE id = ?", (task, description, status, no))
@@ -97,7 +102,7 @@ def update(no):
 @route('/delete/<no:int>', method='GET')
 def delete(no):
     try:
-        conn = sqlite3.connect('../model/checklist.db')
+        conn = sqlite3.connect('../models/checklist.db')
         cl = conn.cursor()
         cl.execute("DELETE FROM checklist WHERE id = ?", (str(no)))
         conn.commit()
