@@ -3,7 +3,7 @@
 # controller.py - layer control of MVC pattern
 #
 # author = {'name': 'Edson Silva', 'email': 'edsonlead@gmail.com'}
-# 
+#
 # ----------------------------------------------------------------------------
 #
 # This layer control contains the CRUD - create, read, update and delete
@@ -83,7 +83,8 @@ def update(no):
             cl.execute("UPDATE checklist SET task = ? , description = ? ,\
                     status = ? WHERE id = ?", (task, description, status, no))
             conn.commit()
-            return '<script>window.alert("The Task %s was updated!")</script>' % no
+            return '<script>window.alert("The Task %s was updated!")</script>'\
+                % no
         else:
             conn = sqlite3.connect('checklist.db')
             cl = conn.cursor()
