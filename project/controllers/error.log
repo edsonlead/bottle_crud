@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "controller.py", line 32, in <module>
+    index()
+  File "controller.py", line 28, in index
+    output = template('index', rows=result)
+  File "/usr/lib/python2.7/site-packages/bottle.py", line 3605, in template
+    TEMPLATES[tplid] = adapter(name=tpl, lookup=lookup, **settings)
+  File "/usr/lib/python2.7/site-packages/bottle.py", line 3212, in __init__
+    raise TemplateError('Template %s not found.' % repr(name))
+TemplateError

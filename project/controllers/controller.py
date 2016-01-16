@@ -37,7 +37,7 @@ except:
     raise SystemExit
 
 
-@route('/new', method='GET')
+@route('/create', method='GET')
 def new():
     try:
         if request.GET.get('save', '').strip():
@@ -49,7 +49,7 @@ def new():
             else:
                 status = "No"
 
-            conn = sqlite3.connect('../models/checklist.db')
+            conn = sqlite3.connect('checklist.db')
             cl = conn.cursor()
             cl.execute("INSERT INTO checklist (task,description,status)\
                         VALUES (?,?,?)", (task, description, status))
@@ -57,9 +57,8 @@ def new():
             conn.commit()
             cl.close()
             return '<p>The new task (ID = %s) was inserted.</p>' % new_id
-            redirect("/index")
         else:
-            return template('new_task.tpl')
+            return template('create_task.tpl')
     except:
         error = traceback.format_exec()
         print('An error has occurred:\n', error)
@@ -79,14 +78,14 @@ def update(no):
             else:
                 status = "No"
 
-            conn = sqlite3.connect('../models/checklist.db')
+            conn = sqlite3.connect('checklist.db')
             cl = conn.cursor()
             cl.execute("UPDATE checklist SET task = ? , description = ? ,\
                     status = ? WHERE id = ?", (task, description, status, no))
             conn.commit()
-            return '<p>The Task %s was updated!</p>' % no
+            return '<script>window.alert("The Task %s was updated!")</script>' % no
         else:
-            conn = sqlite3.connect('../model/checklist.db')
+            conn = sqlite3.connect('checklist.db')
             cl = conn.cursor()
             cl.execute("SELECT task, description, status FROM checklist WHERE\
                 id = ?", (str(no)))
@@ -102,7 +101,7 @@ def update(no):
 @route('/delete/<no:int>', method='GET')
 def delete(no):
     try:
-        conn = sqlite3.connect('../models/checklist.db')
+        conn = sqlite3.connect('checklist.db')
         cl = conn.cursor()
         cl.execute("DELETE FROM checklist WHERE id = ?", (str(no)))
         conn.commit()
