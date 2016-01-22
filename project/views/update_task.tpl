@@ -8,5 +8,6 @@ href="/">Cancelar</a></p>
     <option value="Yes">Yes</option>
     <option value="No">No</option>
   </select><br />
-  <input type="submit" class="btn btn-success" name="update" value="Update">
+  <button type="submit" class="btn btn-success" name="update"
+  value="Update"><span class="glyphicon glyphicon-save"> </span></button>
 % include('footer.tpl')

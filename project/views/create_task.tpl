@@ -8,7 +8,8 @@
     <option value="Yes">Yes</option>
     <option value="No">No</option>
   </select><br />
-  <input type="submit" class="btn btn-success" name="save" value="Create">
+  <button type="submit" class="btn btn-success" name="save"
+    value="Create"><span class="glyphicon glyphicon-save"> </span></button>
 </form>
 % include('footer.tpl')
 
