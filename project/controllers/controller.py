@@ -114,5 +114,9 @@ def delete(no):
         raise SystemExit
 
 
+@error(404)
+def mistake404(code):
+    return template('error404')
+
 debug(True)
 run(reloader=True)
