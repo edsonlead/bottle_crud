@@ -12,6 +12,6 @@ $ python project/models/model.py
 $ python app.py
 ```
 
-** Developing **
+**Developing**
 
-* Thanks to <a href="https://github.com/salimane/bottle-mvc">salimane</a> and <a href="https://github.com/yanwarsolahudinn/bottleck">yanwarsolahudinn</a> for the inspiration. *
+*Thanks to <a href="https://github.com/salimane/bottle-mvc">salimane</a> and <a href="https://github.com/yanwarsolahudinn/bottleck">yanwarsolahudinn</a> for the inspiration.*
