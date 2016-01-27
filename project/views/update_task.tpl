@@ -1,6 +1,9 @@
 % include('header.tpl')
-<p>Update the task "{{old[0]}}" (ID = {{no}}) <a class="label label-warning"
-href="/">Cancelar</a></p>
+<a class="btn btn-warning" href="/"><span class="glyphicon
+glyphicon-arrow-left"> </span></a>
+<br />
+<br />
+<p>Update the task "{{old[0]}}" (ID = {{no}})</p>
 <form action="/update/{{no}}" method="get">
   <input type="text" class="form-control" name="task" value="{{old[0]}}"><br />
   <textarea class="form-control" name="description">{{old[1]}}</textarea><br />

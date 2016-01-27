@@ -1,6 +1,9 @@
 % include('header.tpl')
-<p>Create a new task to the list:
-<a class="label label-warning" href="/">Cancelar</a></p>
+<a class="btn btn-warning" href="/"><span class="glyphicon
+glyphicon-arrow-left"> </span></a>
+<br />
+<br />
+<p>Create a new task to the list:</p>
 <form action="/create" method="GET">
   <input type="text" class="form-control" placeholder="Task" name="task"><br />
   <textarea class="form-control" placeholder="Description" name="description"></textarea><br />
