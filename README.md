@@ -2,14 +2,16 @@
 A example of CRUD using Bottle Framework with MVC Pattern and SQLite3 database
 
 ### prepare:
-´´´
+```
 $ pip install -r requirements.txt
 $ python models.py
-´´´
+```
 
 ### usage:
-´´´
+```
 $ python app.py
-´´´
+```
+
+
 **
 Thanks to <a href="https://github.com/salimane/bottle-mvc">salimane</a> and <a href="https://github.com/yanwarsolahudinn/bottleck">yanwarsolahudinn</a> for the inspiration.
