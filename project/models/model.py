@@ -3,7 +3,7 @@
 # model.py - layer model of MVC pattern
 #
 # author = {'name': 'Edson Silva', 'email': 'edsonlead@gmail.com'}
-# 
+#
 # ----------------------------------------------------------------------------
 #
 # This layer model contain the database structure
@@ -23,6 +23,9 @@ try:
                         task VARCHAR(100) NOT NULL,\
                         description VARCHAR(200) NOT NULL,\
                         status VARCHAR(3) NOT NULL)")
+    conn.execute("INSERT INTO checklist(id,task,description,status) VALUES \
+                        (1,'Task number 1', 'This is a description about Task \
+                        number 1', 'Yes')")
     conn.commit()
 
 except:
