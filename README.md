@@ -1,6 +1,8 @@
 # bottle_crud
 A example of CRUD using Bottle Framework with MVC Pattern and SQLite3 database
 
+![bottle_crud.png](https://github.com/edsonlead/bottle_crud/blob/master/project/static/bottle-crud.png)
+
 ### prepare:
 ```
 $ pip install -r requirements.txt
